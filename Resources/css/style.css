@@ -1,0 +1,579 @@
+html {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.4rem;
+}
+
+.container {
+    display: flex;
+}
+
+h1 {
+    padding: 2rem 1.5rem;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+
+/* TOP HEADER */
+
+.header {
+    height: 4rem;
+}
+
+.header .container {
+    background-color: darkslategray;
+    position: fixed;
+    z-index: 5;
+    justify-content: space-between;
+    color: white;
+    width: 100%;
+    height: 4rem;
+}
+
+.header h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header .logo, .header .intro-nav {
+    display: inline-flex;
+    align-items: center;
+}
+
+.logo .mobile {
+    display: none;
+}
+
+.logo img {
+    height: 2rem;
+    padding-left: 2rem;
+}
+
+.logo h1 {
+    padding-left: 1rem;
+}
+
+.intro-nav ul {
+    display: flex;
+    padding: 1rem 0rem;
+}
+
+.intro-nav li {
+    padding-right: 2rem;
+}
+
+
+@media only screen and (max-width: 470px) {
+    .header .container{
+        background-color: white;
+    }
+    
+    
+    .header h1, .header ul {
+        display: none;
+    }
+    .logo .mobile {
+        display: inline-flex;
+        align-items: center;
+    }
+    
+    .logo img {
+        transition: all 0.05s linear;
+    }
+    
+    .logo img:hover {
+        height: 2.25rem;
+    }
+    
+    .logo {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .logo img {
+        padding: 2rem;
+    }
+}
+
+
+
+/* INTRO BANNER */
+
+.banner {
+    background-color: lightgrey;
+    position: relative;
+}
+
+.banner .container {
+    padding: 2rem 1.5rem;
+}
+
+.banner .image-container {
+    width: 60%;
+    height: auto;
+    padding-right: 3rem;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.banner .text-container {
+    width: 30%;
+    height: auto;
+    display: block;
+}
+
+.banner .text-container h2 {
+    font-size: 3rem;
+    padding-top: 20%;
+    color: darkslategrey;
+    font-weight: 700;
+    max-width: 90%;
+}
+
+.banner .text-container p {
+    font-size: 2rem;
+    padding: 10% 0;
+    color: darkslategrey;
+    max-width: 90%;
+}
+
+
+.banner .button {
+    background-color: darkslategrey;
+    color: lightgrey;
+    width: auto;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: all 0.1s linear;
+}
+
+.banner .button:hover {
+    background-color: white;
+    color: darkslategray;
+}
+
+@media only screen and (max-width: 470px) {
+    .banner {
+        padding-top: 240px;
+        background-color: darkgrey;
+    }
+    
+    .banner .image-container {
+        display: none;
+    }
+    
+    .banner .container {
+        background-color: lightgrey;
+    }
+    
+    .banner .text-container {
+        width: 100%;
+    }
+    
+    .banner .text-container h2 {
+        padding: 0;
+        line-height: 1.5;
+        font-size: 2.25rem;
+        font-weight: 800;
+    }
+    
+    .banner .text-container p {
+        font-size: 1.5rem;
+        padding: 10% 0;
+        color: darkslategrey;
+        font-weight: 500;
+        line-height: 1.4;
+    } 
+}
+
+
+
+/* INFORMATION */
+
+.information {
+    background-color: darkgrey;
+}
+
+.information .leftside {
+    border: 1.5px solid lightgrey;
+    padding: 2rem 1.5rem;
+    width: 60%;
+}
+
+.information .leftside img {
+    width: 100%;
+    height: auto;
+}
+
+.information .leftside .text-container {
+    padding: 10% 5%; 
+}
+
+.information .leftside h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding-bottom: 2rem;
+    color: darkslategray;
+}
+
+.information .leftside p {
+    padding: 3% 0;
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: slategrey;
+}
+
+.information .leftside span {
+    padding: 3% 0;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: darkslategray;
+}
+
+.information .rightside {
+    border: 1.5px solid lightgrey;
+    width: auto;
+
+}
+
+
+.information .rightside .item {
+    display: flex;
+    width: 100%;
+    padding: 2rem 1.5rem;
+
+}
+
+.information .rightside .item:last-child {
+    margin-bottom: 4rem;
+    background-color: slategray;
+}
+
+
+.information .rightside .image-container {
+    width: 35%;
+    height: auto;
+}
+
+.information .rightside img {
+    width: 100%;
+    height: auto;
+}
+
+.information .rightside .mobile {
+    display: none;
+}
+
+.information .rightside .text-container {
+    padding: 0 1.5rem;
+}
+
+.information .text-container h3{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 3rem 0 0.5rem 0;
+    color: darkslategray;
+} 
+
+.information .text-container h4 {
+    max-width: 80%;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    line-height: 1.4;
+    color: darkslategray;
+} 
+
+.information .text-container h6 {
+    color: white;
+    padding-bottom: 10%;
+    transition: all 0.1s linear;
+}
+
+.information .text-container h6:hover {
+    font-weight: 700;
+}
+
+
+@media only screen and (max-width: 470px) {
+    .information .leftside {
+        display: none;
+    }
+    
+    .information .rightside .item {
+        width: 100%;
+        display: block;
+        padding: 0;
+    }
+    
+    .information .rightside .image-container {
+        display: block;
+        width: 100%;
+        
+    }
+    
+    .information .rightside img {
+        display: none;
+    }
+    
+    .information .rightside .mobile {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    
+    .information .rightside .item:last-child {
+        margin-bottom: 0;
+        background-color: darkgrey;
+    }
+    
+    .information .text-container h3 {
+        padding: 1rem;   
+    }
+    
+    .information .text-container h4 {
+        padding: 0 1rem;
+        line-height: 1.4;
+        color: darkslategray;
+    }
+    
+    .information .text-container h6 {
+        padding: 1rem;
+        padding-bottom: 2rem;
+    }
+}
+
+
+
+
+
+/* START LEARNING */
+
+.learning {
+    background-color: lightgrey;
+    padding: 2rem 0;
+}
+
+.learning .majors {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.learning .major {
+    display: inline-block;
+    width: 25%;
+    background-color: white;
+    margin: 1.5rem 2rem;
+    min-width: 13rem;
+    transition: all 0.15s ease-in 0.05s;
+}
+
+.learning .major:hover {
+    border: 2px solid black;
+}
+
+.learning .image-container {
+    width: 100%;
+}
+
+.learning .image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.learning .text-container {
+    padding: 2rem 2rem;
+}
+
+.learning h2 {
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+.learning h3 {
+    font-size: 1.25rem;
+    padding-top: 2rem;
+}
+
+.learning h4 {
+    font-size: 1rem;
+    padding-top: 0.75rem;
+    line-height: 1.4;
+}
+
+@media only screen and (max-width: 470px) {
+    .learning img, .learning h3, .learning h4 {
+        display: none;
+    }
+    
+    .learning .majors {
+        padding:
+    }
+    
+    .learning .major {
+        width: 100%;
+    }
+}
+
+
+
+
+/*THESIS EXHIBIT*/
+
+.thesis {
+    background-color: darkgrey;
+}
+
+.thesis .leftside, .thesis .rightside {
+    display: inline-block;
+}
+
+
+.thesis .leftside {
+    width: 60%;
+}
+
+.thesis .video-container {
+    padding: 0 3rem; 
+}
+
+.thesis video {
+    width: 100%;
+    height: auto;
+}
+
+
+.thesis .leftside .text-container {
+    padding: 0 1.5rem 2rem 3rem;
+}
+
+.thesis .leftside h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 1.5rem 0;
+}
+
+.thesis .leftside h3 {
+    line-height: 1.4;
+}
+
+.thesis .rightside {
+    width: auto;
+}
+
+.thesis .rightside .items {
+
+}
+
+.thesis .rightside .item {
+    display: flex;
+    padding: 3% 0;
+}
+
+.thesis .image-container {
+    width: 30%;
+    height: auto;
+}
+
+.thesis img {
+    width: 100%;
+    height: auto;
+}
+
+.thesis .rightside .text-container {
+    padding: 10% 5%;
+}
+
+.thesis .rightside h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-bottom: 3%;
+}
+
+@media only screen and (max-width: 470px) {
+    .thesis .rightside, .thesis .leftside .text-container {
+        display: none;
+    }
+    
+    .thesis .leftside {
+        width: 100%;
+    }
+    
+    .thesis .video-container {
+        padding: 1rem;
+    } 
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: darkslategray;
+    border-top: 3px solid white;
+    color: white;
+    height: auto;
+}
+
+footer .container {
+    justify-content: space-between;
+    padding: 2rem 3rem;
+}
+
+footer .copyright, footer nav {
+    display: inline-flex;
+    align-items: center;
+}
+
+footer li {
+    padding: 1rem;
+}
+
+@media only screen and (max-width: 470px) {
+    
+    footer .container {
+        padding: 2.5rem 0 1rem 1rem;
+        text-align: center;
+    }
+
+    footer nav {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 470px) {
+      
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
